@@ -1,12 +1,12 @@
 document.getElementById("y").textContent = new Date().getFullYear();
 
-const navbar = document.querySelector(".navbar");
-if (navbar) {
+const header = document.querySelector("header.sticky-top");
+if (header) {
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 150) {
-      navbar.classList.add("scrolled");
+    if (window.scrollY > 80) {
+      header.classList.add("scrolled");
     } else if (window.scrollY < 20) {
-      navbar.classList.remove("scrolled");
+      header.classList.remove("scrolled");
     }
   });
 }
