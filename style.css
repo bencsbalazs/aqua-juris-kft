@@ -17,9 +17,13 @@
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -27,7 +31,7 @@ body {
   color: var(--text);
   line-height: 1.65;
   background: var(--bg);
-  background-image: 
+  background-image:
     radial-gradient(circle at 100% 0%, rgba(0, 108, 224, 0.06) 0%, transparent 600px),
     radial-gradient(circle at 0% 100%, rgba(0, 79, 159, 0.04) 0%, transparent 600px);
   background-attachment: fixed;
@@ -72,11 +76,12 @@ header {
 }
 
 .brand img {
-  height: 180px;
+  height: 16em;
   width: auto;
   object-fit: contain;
   display: block;
   transition: height 0.3s ease;
+  border-radius: 1em;
 }
 
 section {
@@ -92,7 +97,7 @@ section {
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-main > .card {
+main>.card {
   margin: 16px 0;
 }
 
@@ -122,7 +127,9 @@ main > .card {
   display: inline-block;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   color: var(--text);
   font-weight: 600;
@@ -258,7 +265,7 @@ li {
   background: var(--card);
 }
 
-main > .photo {
+main>.photo {
   height: 360px;
   margin: 16px 0;
 }
@@ -287,7 +294,7 @@ main > .photo {
   margin-top: 16px;
 }
 
-.cards > .card {
+.cards>.card {
   display: flex;
   flex-direction: column;
 }
@@ -418,16 +425,16 @@ footer {
   .brand img {
     height: 120px;
   }
-  
+
   .footGrid {
     grid-template-columns: 1fr;
     text-align: left;
   }
-  
+
   .footGrid .small[style*="text-align: right"] {
     text-align: left !important;
   }
-  
+
   .team {
     grid-template-columns: 1fr;
   }
@@ -440,6 +447,7 @@ footer {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 .navbar-nav::-webkit-scrollbar {
   display: none;
 }
@@ -447,7 +455,8 @@ footer {
 .custom-pill {
   white-space: nowrap;
   color: var(--muted) !important;
-  padding: 6px 10px !important; /* Smaller padding to prevent wrapping */
+  padding: 6px 10px !important;
+  /* Smaller padding to prevent wrapping */
   border-radius: var(--radius-sm) !important;
   border: 1px solid transparent !important;
   background: transparent !important;
@@ -467,7 +476,7 @@ footer {
   background: var(--card) !important;
   color: var(--accent) !important;
   border-color: rgba(0, 79, 159, 0.15) !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .navbar {
@@ -483,7 +492,8 @@ footer {
 
 @media (min-width: 992px) {
   .navbar-brand img {
-    height: 140px; /* Kept slightly larger but not oversized */
+    height: 140px;
+    /* Kept slightly larger but not oversized */
   }
 }
 
