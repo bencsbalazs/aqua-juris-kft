@@ -46,14 +46,7 @@
 
   <body>
     <header class="sticky-top">
-      <nav
-        class="navbar navbar-expand-lg"
-        style="
-          background: #eaf4ff;
-          border-bottom: 1px solid rgba(11, 30, 53, 0.14);
-          backdrop-filter: blur(6px);
-        "
-      >
+      <nav class="navbar navbar-expand-lg" aria-label="Fő navigáció">
         <div class="container-fluid px-4 px-lg-5">
           <a
             class="navbar-brand brand d-flex align-items-center gap-3 m-0 p-0"
@@ -105,7 +98,7 @@
       </nav>
     </header>
 
-    <main class="wrap">
+    <main class="wrap" aria-label="Fő tartalom">
       <section class="hero">
         <div class="heroGrid">
           <div class="card">
@@ -159,9 +152,13 @@
         </div>
       </section>
 
-      <section id="rolunk" class="anchorOffset">
+      <section
+        id="rolunk"
+        class="anchorOffset"
+        aria-labelledby="heading-rolunk"
+      >
         <div class="card">
-          <h3>Rólunk</h3>
+          <h3 id="heading-rolunk">Rólunk</h3>
           <p>
             Az <strong>AQUA Juris KFT</strong> a környezetvédelem és
             vízgazdálkodás területén nyújt integrált szakértői szolgáltatásokat.
@@ -177,9 +174,13 @@
         </div>
       </section>
 
-      <section id="szolgaltatasok" class="anchorOffset">
+      <section
+        id="szolgaltatasok"
+        class="anchorOffset"
+        aria-labelledby="heading-szolgaltatasok"
+      >
         <div class="card">
-          <h3>Szolgáltatások</h3>
+          <h3 id="heading-szolgaltatasok">Szolgáltatások</h3>
 
           <div class="cards">
             <div class="card flat anchorOffset" id="kv">
@@ -344,9 +345,13 @@
         </div>
       </section>
 
-      <section id="csapat" class="anchorOffset">
+      <section
+        id="csapat"
+        class="anchorOffset"
+        aria-labelledby="heading-csapat"
+      >
         <div class="card">
-          <h3>Csapat</h3>
+          <h3 id="heading-csapat">Csapat</h3>
           <p>A társaság 4 főből áll.</p>
 
           <div class="team">
@@ -419,9 +424,13 @@
         </div>
       </section>
 
-      <section id="kapcsolat" class="anchorOffset">
+      <section
+        id="kapcsolat"
+        class="anchorOffset"
+        aria-labelledby="heading-kapcsolat"
+      >
         <div class="card">
-          <h3>Kapcsolat</h3>
+          <h3 id="heading-kapcsolat">Kapcsolat</h3>
           <p><strong>Székhely:</strong> Pécs, Baranya megye</p>
           <p>
             <strong>Működési terület:</strong> Dél-Dunántúl (Baranya, Somogy,
