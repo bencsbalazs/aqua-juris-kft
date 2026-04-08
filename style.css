@@ -367,6 +367,7 @@ main>.photo {
 .avatar {
   width: 90px;
   height: 90px;
+  margin-top: 16px;
   border-radius: 12px;
   border: 1px solid var(--line);
   background: var(--bg);
